@@ -1,28 +1,17 @@
-class voiture {
-    #marque
-    #model
-    #Annee
+class voiture extends vehicule {
     #couleur
 
-    constructor (marque, model, Annee, couleur){
-    this.#marque = marque;
-    this.#model = model;
-    this.#Annee = Annee;
+    constructor (couleur){
+    super(marque,model,Annee)
     this.#couleur = couleur;
     }
 
-    get model(){return this.#model;}
-    set model(modelrecu){this.#model = modelrecu}
+    get model(){return this.#couleur;}
+    set model(modelrecu){this.#couleur = modelrecu}
 
     afficherdetails(){
-        console.log(`ma voiture est une ${this.#marque},${this.#model},de l'annee ${this.#Annee},avec la couleur ${this.#couleur}`)
+        console.log(`ma voiture a la couleur de${this.#couleur}`)
     }
 }
 
-const maVoiture = new voiture("opel","suv",2024,"blanc")
-maVoiture.model = "astra"
-const maVoiture2 = new voiture("volkswagen","passat",2006,"gris")
-maVoiture2.model = "golf6"
-
-maVoiture.afficherdetails()
-maVoiture2.afficherdetails()
+export default voiture
