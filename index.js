@@ -1,4 +1,7 @@
 import voiture from "./voiture.js";
+import chien from "./chien.js";
+import chat from "./chat.js"
+import animal from "./animal.js";
 
 const maVoiture = new voiture("opel","suv",2024,"blanc")
 maVoiture.marque = "tuyuta"
@@ -13,3 +16,11 @@ maVoiture2.couleur = "noir"
 
 maVoiture.afficherdetails()
 maVoiture2.afficherdetails()
+
+const A = new animal("bete")
+const dog = new chien ("rex")
+const cat = new chat ("suzi")
+
+A.fairedubruit()
+dog.fairedubruit()
+cat.fairedubruit()
