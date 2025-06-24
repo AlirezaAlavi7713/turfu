@@ -1,0 +1,20 @@
+{
+  "name": "turfu",
+  "version": "1.0.0",
+  "description": "yo",
+  "homepage": "https://github.com/AlirezaAlavi7713/turfu#readme",
+  "bugs": {
+    "url": "https://github.com/AlirezaAlavi7713/turfu/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlirezaAlavi7713/turfu.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

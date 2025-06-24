@@ -1,16 +1,19 @@
+import vehicule from "./vehicule.js";
+
 class voiture extends vehicule {
     #couleur
 
-    constructor (couleur){
-    super(marque,model,Annee)
-    this.#couleur = couleur;
+    constructor (marque, model, Annee, couleur){
+        super(marque,model,Annee)
+        this.#couleur = couleur;
     }
 
-    get model(){return this.#couleur;}
-    set model(modelrecu){this.#couleur = modelrecu}
+    get couleur(){return this.#couleur;}
+    set couleur(couleurrecu){this.#couleur = couleurrecu}
 
     afficherdetails(){
-        console.log(`ma voiture a la couleur de${this.#couleur}`)
+        super.afficherdetails();
+        console.log(`Ma voiture a la couleur de ${this.#couleur}`)
     }
 }
 
